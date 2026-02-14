@@ -1020,100 +1020,6 @@ h2{
 
 
 /* Chat Icon */
-.chat-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #700c55;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 9999;
-  color: white;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(139,92,246,0.3);
-}
-
-.chat-icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(139,92,246,0.4);
-}
-
-/* Chatbox Hidden by Default */
-.chatbox {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 320px;
-  background: #1f2937;
-  color: white;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  display: none;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 9999;
-  border: 1px solid rgba(0,0,0,0.1);
-}
-
-.chat-header {
-  background: linear-gradient(135deg,#700c55,#700c55);
-  color: white;
-  padding: 12px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
-
-.chat-body {
-  height: 180px;
-  padding: 10px;
-  overflow-y: auto;
-  background: #111827;
-}
-
-.bot-msg {
-  background: #374151;
-  padding: 8px;
-  border-radius: 6px;
-  margin-bottom: 8px;
-  color: #e5e7eb;
-}
-
-.chat-options {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px;
-}
-
-.chat-options button {
-  padding: 8px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  background: #700c55;
-  font-weight: bold;
-  color: white;
-  transition: 0.3s ease;
-}
-
-.chat-options button:hover {
-  background: #700c55;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-  .chatbox {
-    width: 90%;
-    right: 5%;
-  }
-}
 @media (max-width: 768px) {
     .navbar {
         padding: 12px 18px;
@@ -1122,7 +1028,31 @@ h2{
 
 
 @media (max-width: 768px) {
-  .chatbox {
+  .chatbox {.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
     width: 90%;
     right: 5%;
   }
@@ -1378,4 +1308,5 @@ h2{
     .footer-col ul li a {
         justify-content: center;
     }
+
 }  
