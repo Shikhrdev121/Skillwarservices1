@@ -37,105 +37,61 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- HEADER -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="WhatsApp_Image_2026-02-14_at_1.26.09_AM-removebg-preview.png" alt="SkillWar Services Logo">
-            <span>SkillWar Services</span>
-        </div>
-        <nav>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Lead Your Business with <span>Smart Web Solutions</span></h1>
-            <p>Build powerful, scalable, and conversion-focused digital experiences with SkillWar Services — your trusted Web Development Agency with 6+ years of expertise serving businesses across India.</p>
-            <a href="https://wa.me/919336299212?text=Hello!%20I%20would%20like%20to%20discuss%20web%20development%20Services." 
-               class="btn-primary" target="_blank">Get Chat on WhatsApp</a>
-        </div>
-        <div class="hero-image">
-            <img src="ChatGPT_Image_Feb_12__2026__12_23_49_AM-removebg-preview.png" alt="Web Development Illustration">
-        </div>
-    </section>
-
-    <!-- PROCESS SECTION -->
-    <section class="process-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Process Is <span>Performance</span></h2>
-                <p>We understand your business, audience, and goals to craft the right digital roadmap.</p>
-            </div>
-            <div class="process-grid">
-                <div class="process-card">
-                    <div class="step-number">01</div>
-                    <h3>Workflow Assessment</h3>
-                    <p>We analyze your workflows to identify where your website can create maximum impact.</p>
-                </div>
-                <div class="process-card">
-                    <div class="step-number">02</div>
-                    <h3>Deploy with Confidence</h3>
-                    <p>We build custom websites aligned with your goals ensuring safe deployment.</p>
-                </div>
-                <div class="process-card">
-                    <div class="step-number">03</div>
-                    <h3>Ongoing Support</h3>
-                    <p>After launch we refine and optimize your website for peak performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats">
-        <div class="stats-container">
-            <div class="stat-card">
-                <h2 class="counter" data-target="200" data-symbol="+">0</h2>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat-card">
-                <h2 class="counter" data-target="98" data-symbol="%">0</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div class="stat-card">
-                <h2 class="counter" data-target="6" data-symbol="+">0</h2>
-                <p>Years Experience</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS, SERVICES, TESTIMONIALS, FAQ, FOOTER, etc. -->
-    <!-- You can copy the rest of your sections here as-is from your original code -->
-
-    <!-- WHATSAPP FLOATING BUTTON -->
-    <div class="whatsapp-wrapper">
-        <a href="https://wa.me/919336299212?text=Hello!%20I%20would%20like%20to%20discuss%20web%20development." 
-           class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat">
-        </a>
-        <div class="whatsapp-label">Let's Work<br>Together</div>
-    </div>
-
-    <!-- SCRIPTS -->
-    <script src="index.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // FAQ Slider, Hamburger, Counter, Main Slider logic
-        });
-    </script>
-    <script> document.addEventListener("DOMContentLoaded", function () { /* ================= FAQ SLIDER ================= */ (function () { const faqSlides = document.querySelectorAll(".faq-slide"); let faqIndex = 0; if (faqSlides.length > 0) { setInterval(() => { faqSlides.forEach(slide => slide.classList.remove("active")); faqSlides[faqIndex].classList.add("active"); faqIndex = (faqIndex + 1) % faqSlides.length; }, 3000); } })(); /* ================= HAMBURGER ================= */ const hamburger = document.getElementById("hamburger"); const navLinks = document.getElementById("navLinks"); if (hamburger) { hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); }); } /* ================= COUNTER ================= */ const counters = document.querySelectorAll(".counter"); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute("data-target"); const symbol = counter.getAttribute("data-symbol") || ""; const count = +counter.innerText.replace(/\D/g, ""); const increment = target / 200; if (count < target) { counter.innerText = Math.ceil(count + increment) + symbol; setTimeout(updateCount, 10); } else { counter.innerText = target + symbol; } }; updateCount(); }); /* ================= MAIN SLIDER ================= */ (function () { const slides = document.querySelectorAll(".slide"); const dots = document.querySelectorAll(".dots span"); const next = document.querySelector(".next"); const prev = document.querySelector(".prev"); let index = 0; if (slides.length > 0) { function updateSlider() { slides.forEach(slide => slide.classList.remove("active")); dots.forEach(dot => dot.classList.remove("active")); slides[index].classList.add("active"); if (dots[index]) dots[index].classList.add("active"); } if (next) { next.addEventListener("click", () => { index = (index + 1) % slides.length; updateSlider(); }); } if (prev) { prev.addEventListener("click", () => { index = (index - 1 + slides.length) % slides.length; updateSlider(); }); } setInterval(() => { index = (index + 1) % slides.length; updateSlider(); }, 4000); updateSlider(); } })(); }); </script>
-
-</body>
-</html>
-
+<header class="navbar"> <div class="logo"> <img src="WhatsApp_Image_2026-02-14_at_1.26.09_AM-removebg-preview.png" alt=""> <span>SkillWar Services</span> </div> <nav> <ul class="nav-links" id="navLinks"> <li><a href="#home">Home</a></li> <li><a href="#projects">Projects</a></li> <li><a href="#services">Services</a></li> <li><a href="contact.html" target="_blank">Contact</a></li> </ul> <div class="hamburger" id="hamburger"> <span></span> <span></span> <span></span> </div> </nav> </header> <section class="hero" id="home"> <div class="hero-content"> <h1>Lead Your Business with <span>Smart Web Solutions</span></h1> <p> Build powerful, scalable, and conversion-focused digital experiences with SkillWar Services — your trusted Web Development Agency with 6+ years of expertise serving businesses across India. </p> <a href="https://wa.me/919336299212?text=Hello%21%20I%20would%20like%20to%20discuss%20web%20development%20Services%20." class="btn-primary" target="_blank"> Get Chat on WhatsApp </a> </div> <div class="hero-image"> <img src="ChatGPT_Image_Feb_12__2026__12_23_49_AM-removebg-preview.png" alt=""> </div> </section> <section class="process-section"> <div class="container"> <div class="section-header"> <h2>Process Is <span>Performance</span></h2> <p>We understand your business, audience, and goals to craft the right digital roadmap.</p> </div> <div class="process-grid"> <div class="process-card"> <div class="step-number">01</div> <h3>Workflow Assessment</h3> <p>We analyze your workflows to identify where your website can create maximum impact.</p> </div> <div class="process-card"> <div class="step-number">02</div> <h3>Deploy with Confidence</h3> <p>We build custom websites aligned with your goals ensuring safe deployment.</p> </div> <div class="process-card"> <div class="step-number">03</div> <h3>Ongoing Support</h3> <p>After launch we refine and optimize your website for peak performance.</p> </div> </div> </section> <section class="stats"> <div class="stats-container"> <div class="stat-card"> <h2 class="counter" data-target="200" data-symbol="+">0</h2> <p>Projects Completed</p> </div> <div class="stat-card"> <h2 class="counter" data-target="98" data-symbol="%">0</h2> <p>Happy Clients</p> </div> <div class="stat-card"> <h2 class="counter" data-target="6" data-symbol="+">0</h2> <p>Years Experience</p> </div> </div> </section> <section class="projects"id="projects"> <h2 class="section-title"> Trusted By Big Brands Around the World </h2> <div class="slider"> <button class="prev">&#10094;</button> <div class="slides"> <div class="slide active"> <a href="https://www.whizbytes.in/" target="_blank"> <img src="https://www.whizbytes.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage_2.5b94ede4.png&w=1920&q=75" alt="WhizBytes"></a> <div class="overlay"> <h3>WhizBytes</h3> <p>Innovative Software Solutions</p> </div> </div> <div class="slide"> <a href="https://beta.aliveai.ai/" target="_blank"> <img src="https://beta.aliveai.ai/static/media/Cover%20Image.79ef1c7314fc509e063f.jpg" alt="Aliveai AI"></a> <div class="overlay"> <h3>Aliveai AI</h3> <p>Medical AI Platform</p> </div> </div> <div class="slide"> <a href="https://albazls.ae/"> <img src="https://albazls.ae/wp-content/uploads/2025/03/Landscape-Construction-Hero-Image.jpg" alt="albazls"></a> <div class="overlay"> <h3>Albazls</h3> <p>Landscape Design & Swimming Pool Construction</p> </div> </div> <div class="slide"> <img src="https://albazls.ae/wp-content/uploads/2025/03/Landscape-Construction-Hero-Image.jpg"> alt="albazls"> <div class="overlay"> <h3>Albazls</h3> <p>Landscape Design & Swimming Pool Construction</p> </div> </div> </div> <button class="next">&#10095;</button> <div class="dots-wrapper"> <div class="dots"> <span class="dot active"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </div> </div> </div> </section> <section class="services" id="services"> <div class="container"> <div class="section-header"> <span>Our Services</span> <h2>Web Solutions That Scale Your Business</h2> <p> We build powerful digital experiences that help brands grow, convert, and lead in their industry. </p> </div> <div class="services-grid"> <div class="service-card"> <div class="icon"> <i class="fa-solid fa-code"></i></div> <h3>Custom Website Development</h3> <p> High-performance business websites, corporate platforms, and scalable custom solutions built for long-term growth. </p> </div> <div class="service-card"> <div class="icon"> 🎨</div> <h3>Website Design Agency in India</h3> <p> Modern, user-focused, and conversion-driven UI/UX designs that create powerful first impressions. </p> </div> <div class="service-card"> <div class="icon">🛒</div> <h3>E-Commerce Development</h3> <p> Secure, high-performance online stores with payment integration, automation, and analytics systems. </p>
+</div> 
+    <div class="service-card">
+        <div class="icon">🚀</div> 
+        <h3>SEO-Optimized Development</h3> 
+        <p> Fast, mobile-first, and search-engine-friendly websites designed to rank higher and drive organic traffic. </p> </div> 
+    <div class="service-card"> 
+        <div class="icon">
+            <i class="fa-solid fa-location-dot"></i></div> 
+        <h3>Website Development Across Uttar Pradesh</h3>
+        <p> Supporting startups, and enterprises across UP and India with reliable digital solutions. </p> </div> 
+    <div class="service-card"> <div class="icon"> <i class="fa-solid fa-bullhorn"></i></div> 
+        <h3>Business Automation & Integrations</h3> 
+        <p> CRM systems, APIs, payment gateways, and workflow automation to streamline business operations. </p> </div> </div> </div> </section> <
+    !-- <section class="agency-intro"> 
+        <div class="container"> 
+            <h2>Your Trusted Web Development Agency in India</h2> 
+            <p> We specialize in modern UI/UX design, scalable platforms, and growth-driven digital systems that help businesses build strong online presence and generate real results. </p>
+            <div class="image-grid"> 
+                <div class="img-card"> 
+                    <img src="webillustrator.png" alt=""> 
+                </div> <div class="img-card">
+                    <img src="closeup-code-screen-web-design-95216117e49c4695642b4940ab6f7f23.jpg" alt=""> </div>
+                <div class="img-card">
+                    <img src="photo-1503252947848-7338d3f92f31.png" alt=""> </div>
+                <div class="img-card"> 
+                    <img src="ui.jpg" alt=""> </div> </div> </div> </section> -->
+    <section class="testimonials"> 
+        <h2>What Our Clients Say</h2> 
+        <div class="testimonial-wrapper"> 
+            <div class="testimonial-card">
+                <p> “SkillWar Services built a fast and professional website for our business. Highly recommended for Web Development in Varanasi.” </p>
+                <h4>– Business Owner</h4> </div>
+            <div class="testimonial-card"> 
+                <p> “Best Website Design Agency in Varanasi — great design, fast delivery, and strong support.” </p>
+                <h4>– Startup Founder</h4> </div> </div> </section> <section class="faq">
+                    <h2>FAQs</h2> <div class="faq-slider"> <div class="faq-slide active"> 
+                        <h3>How long does it take to build a website?</h3>
+                        <p>Usually 7–21 days depending on project size.</p> </div>
+                        <div class="faq-slide"> <h3>Do you provide SEO with development?</h3>
+                            <p>Yes, all websites are SEO-friendly.</p> </div> <div class="faq-slide"> 
+                                <h3>Do you work outside Varanasi?</h3> <p>Yes, across Uttar Pradesh and India.</p> </div> </div> </section> <
+    !-- CTA --> <!-- FOOTER --> <footer class="footer"> 
+        <div class="footer-container"> <div class="footer-col">
+            <h3>SkillWar Services</h3> 
+            <p>Modern & SEO Friendly Website Development Agency in Varanasi.</p> </div> 
+            <div class="footer-col"> <h4>Services</h4> <ul> <li><a href="#">Website Design</a></li>
+                <li><a href="#">Web Development</a></li> <li><a href="#">SEO Optimization</a></li> </ul> </div>
+            <div class="footer-col"> <h4>Quick Links</h4> <ul> <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li> <li><a href="contact.html" target="_blank">Contact</a></li> </ul> </div> 
+            <div class="footer-col"> <h4>Contact</h4> <p>Varanasi, India</p> <p>Email: Skillwarservices@gmail.com</p>
+                <p>Phone: +919336299212</p> </div> </div> <div class="footer-bottom">
+                    <p>© 2026 SkillWar Services | All Rights Reserved</p> </div> </footer> 
+    <div class="whatsapp-wrapper"> 
+        <a href="https://wa.me/919336299212?text=Hello%21%20I%20would%20like%20to%20discuss%20web%20development." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"> 
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat"> </a> 
+        <div class="whatsapp-label">Let's Work<br>Together</div> </div> 
+    <script> document.addEventListener("DOMContentLoaded", function () { /* ================= FAQ SLIDER ================= */ (function () { const faqSlides = document.querySelectorAll(".faq-slide"); let faqIndex = 0; if (faqSlides.length > 0) { setInterval(() => { faqSlides.forEach(slide => slide.classList.remove("active")); faqSlides[faqIndex].classList.add("active"); faqIndex = (faqIndex + 1) % faqSlides.length; }, 3000); } })(); /* ================= HAMBURGER ================= */ const hamburger = document.getElementById("hamburger"); const navLinks = document.getElementById("navLinks"); if (hamburger) { hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); }); } /* ================= COUNTER ================= */ const counters = document.querySelectorAll(".counter"); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute("data-target"); const symbol = counter.getAttribute("data-symbol") || ""; const count = +counter.innerText.replace(/\D/g, ""); const increment = target / 200; if (count < target) { counter.innerText = Math.ceil(count + increment) + symbol; setTimeout(updateCount, 10); } else { counter.innerText = target + symbol; } }; updateCount(); }); /* ================= MAIN SLIDER ================= */ (function () { const slides = document.querySelectorAll(".slide"); const dots = document.querySelectorAll(".dots span"); const next = document.querySelector(".next"); const prev = document.querySelector(".prev"); let index = 0; if (slides.length > 0) { function updateSlider() { slides.forEach(slide => slide.classList.remove("active")); dots.forEach(dot => dot.classList.remove("active")); slides[index].classList.add("active"); if (dots[index]) dots[index].classList.add("active"); } if (next) { next.addEventListener("click", () => { index = (index + 1) % slides.length; updateSlider(); }); } if (prev) { prev.addEventListener("click", () => { index = (index - 1 + slides.length) % slides.length; updateSlider(); }); } setInterval(() => { index = (index + 1) % slides.length; updateSlider(); }, 4000); updateSlider(); } })(); }); </script> <script src="index.js"></script> </body> </html> 
