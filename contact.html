@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillWar Services | Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+<style>
+
+</style>
+</head>
+
+<body>
+
+<div class="blur one"></div>
+<div class="blur two"></div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Connect With SkillWar Services</h1>
+    <p>We craft powerful digital solutions that elevate your brand and business.</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+    <!-- LEFT GLASS -->
+    <div class="glass">
+        <h2>Contact Information</h2>
+
+        <div class="info-box">
+            <h4>📍 Address</h4>
+            <p>India</p>
+        </div>
+
+        <div class="info-box">
+            <h4>📞 Phone</h4>
+            <p>+91 9336299212</p>
+        </div>
+
+        <div class="info-box">
+            <h4>📧 Email</h4>
+            <p>skillwarservices@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+            <h4>🛠 Services</h4>
+            <p>Web Development<br>
+               App Development<br>
+               UI/UX Design<br>
+               Digital Marketing</p>
+        </div>
+    </div>
+
+    <!-- RIGHT GLASS FORM -->
+    <div class="glass">
+        <h2>Send Message</h2>
+
+        <form onsubmit="sendToWhatsApp(event)">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option>Web Development</option>
+                <option>App Development</option>
+                <option>UI/UX Design</option>
+                <option>Digital Marketing</option>
+            </select>
+
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-floating">
+        <div class="footer-float-item float-f1">✨</div>
+        <div class="footer-float-item float-f2">🌟</div>
+        <div class="footer-float-item float-f3">💡</div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>SkillWar Services</h3>
+            <p>Modern & SEO Friendly Website Development Agency in Varanasi.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO Optimization</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href=index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Varanasi, India</p>
+            <p>Email: Skillwarservices@gmail.com</p>
+            <p>Phone: +919336299212</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SkillWar Services | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+function sendToWhatsApp(event){
+    event.preventDefault();
+
+    const name=document.getElementById("name").value;
+    const phone=document.getElementById("phone").value;
+    const email=document.getElementById("email").value;
+    const service=document.getElementById("service").value;
+    const message=document.getElementById("message").value;
+
+    // Auto Date & Time
+    const now = new Date();
+    const date = now.toLocaleDateString();
+    const time = now.toLocaleTimeString();
+
+    // Random Inquiry ID
+    const inquiryID = "SW-" + Math.floor(1000 + Math.random() * 9000);
+const text =
+`🆔 Inquiry ID: ${inquiryID}
+📅 Date: ${date}
+⏰ Time: ${time}
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+📧 Email: ${email}
+🛠 Service: ${service}
+
+📝 Message:
+${message}
+
+🌐 Source: Website Contact Form`;
+
+    const url=`https://wa.me/919336299212?text=${encodeURIComponent(text)}`;
+    window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
