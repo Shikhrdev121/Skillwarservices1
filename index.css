@@ -833,12 +833,36 @@ h2{
 
 .footer{
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-  color:#d1d5db;
+  color: #fff;
   padding: 80px 20px 30px;
-  margin-top: 0;
+  margin-top: 60px;
   position: relative;
   overflow: hidden;
   border-top: 2px solid rgba(139,92,246,0.2);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 350px;
+  height: 350px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* Footer Floating Elements */
@@ -879,28 +903,6 @@ h2{
     animation: footer-float 10s ease-in-out infinite 1s;
 }
 
-/* Footer Social/Contact Links */
-.footer-col-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.footer-contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 14px;
-  color: #a0aec0;
-  line-height: 1.6;
-}
-
-.footer-contact-item span {
-  color: #700c55;
-  font-weight: 600;
-  min-width: 20px;
-}
-
 @keyframes footer-float {
     0%, 100% {
         transform: translateY(0px) translateX(0px);
@@ -927,26 +929,6 @@ h2{
   padding-bottom: 40px;
 }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 12px;
-}
-
-.footer-col ul li a{
-  color:#a0aec0;
-  text-decoration:none;
-  font-size:14px;
-  transition: 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .footer-col {
   position: relative;
   z-index: 2;
@@ -969,7 +951,7 @@ h2{
   left: 0;
   width: 40px;
   height: 3px;
-  background: linear-gradient(90deg, hsl(316, 68%, 67%), #4c0a3a);
+  background: linear-gradient(90deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
   border-radius: 2px;
 }
 
@@ -986,35 +968,18 @@ h2{
 .footer-col p {
   font-size: 14px;
   line-height: 1.8;
-  color: #a0aec0;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 12px;
 }
 
-.footer-col ul li a:hover{
-  color:#700c55;
-  transform: translateX(5px);
-}
-
-.footer-bottom{
-  text-align:center;
-  margin-top:40px;
-  padding-top:30px;
-  padding-bottom: 20px;
-  border-top: 1px solid rgba(139,92,246,0.3);
-  font-size:14px;
-  position: relative;
-  z-index: 2;
-  color: #a0aec0;
-  background: rgba(139,92,246,0.05);
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.footer-bottom p {
+.footer-col ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-weight: 500;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
 }
 .whatsapp-wrapper {
   position: fixed;
@@ -1345,5 +1310,6 @@ h2{
     }
 
 }  
+
 
 
