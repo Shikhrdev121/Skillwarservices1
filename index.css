@@ -860,7 +860,7 @@ h2{
   left: -5%;
   width: 350px;
   height: 350px;
-  background: rgba(255,255,255,0.05);
+  background: #700c55;
   border-radius: 50%;
   pointer-events: none;
 }
@@ -938,7 +938,7 @@ h2{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #700c55;
+  color: #fff;
   letter-spacing: 0.5px;
   position: relative;
   padding-bottom: 12px;
@@ -1359,6 +1359,7 @@ h2{
     }
 
 }  
+
 
 
 
