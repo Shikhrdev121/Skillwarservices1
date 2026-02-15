@@ -70,22 +70,57 @@
                         <div class="faq-slide"> <h3>Do you provide SEO with development?</h3>
                             <p>Yes, all websites are SEO-friendly.</p> </div> <div class="faq-slide"> 
                                 <h3>Do you work outside Varanasi?</h3> <p>Yes, across Uttar Pradesh and India.</p> </div> </div> </section> 
-    <!-- CTA --> <!-- FOOTER --> <footer class="footer"> 
-        <div class="footer-container"> <div class="footer-col">
-            <h3>SkillWar Services</h3> 
-            <p>Modern & SEO Friendly Website Development Agency in Varanasi.</p> </div> 
-            <div class="footer-col"> <h4>Services</h4> <ul> <li><a href="#">Website Design</a></li>
-                <li><a href="#">Web Development</a></li> <li><a href="#">SEO Optimization</a></li> </ul> </div>
-            <div class="footer-col"> <h4>Quick Links</h4> <ul> <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li> <li><a href="contact.html" target="_blank">Contact</a></li> </ul> </div> 
-            <div class="footer-col"> <h4>Contact</h4> <p>Varanasi, India</p> <p>Email: Skillwarservices@gmail.com</p>
-                <p>Phone: +919336299212</p> </div> </div> <div class="footer-bottom">
+    <!-- CTA --> <!-- FOOTER --> <footer class="footer">
+    <div class="footer-floating">
+        <div class="footer-float-item float-f1">✨</div>
+        <div class="footer-float-item float-f2">🌟</div>
+        <div class="footer-float-item float-f3">💡</div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>SkillWar Services</h3>
+            <p>Modern & SEO Friendly Website Development Agency in Varanasi.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO Optimization</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Varanasi, India</p>
+            <p>Email: Skillwarservices@gmail.com</p>
+            <p>Phone: +919336299212</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SkillWar Services | All Rights Reserved</p>
+    </div>
+</footer>
+
                     <p>© 2026 SkillWar Services | All Rights Reserved</p> </div> </footer> 
     <div class="whatsapp-wrapper"> 
         <a href="https://wa.me/919336299212?text=Hello%21%20I%20would%20like%20to%20discuss%20web%20development." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"> 
             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat"> </a> 
         <div class="whatsapp-label">Let's Work<br>Together</div> </div> 
     <script> document.addEventListener("DOMContentLoaded", function () { /* ================= FAQ SLIDER ================= */ (function () { const faqSlides = document.querySelectorAll(".faq-slide"); let faqIndex = 0; if (faqSlides.length > 0) { setInterval(() => { faqSlides.forEach(slide => slide.classList.remove("active")); faqSlides[faqIndex].classList.add("active"); faqIndex = (faqIndex + 1) % faqSlides.length; }, 3000); } })(); /* ================= HAMBURGER ================= */ const hamburger = document.getElementById("hamburger"); const navLinks = document.getElementById("navLinks"); if (hamburger) { hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); }); } /* ================= COUNTER ================= */ const counters = document.querySelectorAll(".counter"); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute("data-target"); const symbol = counter.getAttribute("data-symbol") || ""; const count = +counter.innerText.replace(/\D/g, ""); const increment = target / 200; if (count < target) { counter.innerText = Math.ceil(count + increment) + symbol; setTimeout(updateCount, 10); } else { counter.innerText = target + symbol; } }; updateCount(); }); /* ================= MAIN SLIDER ================= */ (function () { const slides = document.querySelectorAll(".slide"); const dots = document.querySelectorAll(".dots span"); const next = document.querySelector(".next"); const prev = document.querySelector(".prev"); let index = 0; if (slides.length > 0) { function updateSlider() { slides.forEach(slide => slide.classList.remove("active")); dots.forEach(dot => dot.classList.remove("active")); slides[index].classList.add("active"); if (dots[index]) dots[index].classList.add("active"); } if (next) { next.addEventListener("click", () => { index = (index + 1) % slides.length; updateSlider(); }); } if (prev) { prev.addEventListener("click", () => { index = (index - 1 + slides.length) % slides.length; updateSlider(); }); } setInterval(() => { index = (index + 1) % slides.length; updateSlider(); }, 4000); updateSlider(); } })(); }); </script> <script src="index.js"></script> </body> </html> 
+
 
 
 
