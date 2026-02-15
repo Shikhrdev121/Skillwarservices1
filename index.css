@@ -951,7 +951,7 @@ h2{
   left: 0;
   width: 40px;
   height: 3px;
-color:#700c55;
+  background: linear-gradient(90deg, hsl(316, 68%, 67%), #4c0a3a);
     border-radius: 2px;
 }
 
@@ -968,7 +968,7 @@ color:#700c55;
 .footer-col p {
   font-size: 14px;
   line-height: 1.8;
-  color: rgba(255,255,255,0.85);
+  color: #a0aec0;
   margin-bottom: 12px;
 }
 
@@ -993,7 +993,7 @@ color:#700c55;
 }
 
 .footer-col ul li a:hover {
-  color: rgb(255,255,255,0.8);
+  color:#700c55;
   transform: translateX(5px);
 }
 
@@ -1359,6 +1359,7 @@ color:#700c55;
     }
 
 }  
+
 
 
 
